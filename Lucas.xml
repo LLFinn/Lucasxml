@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Lucas_Dog_Boutique [
+
+<!ELEMENT Lucas_Dog_Boutique (inventory, About_Us)>
+<!ELEMENT inventory (Dog_Treats|Leashes|accessories)>
+<!ELEMENT Dog_Treats (about|ingredients)>
+<!ELEMENT about (#PCDATA)>
+<!ELEMENT ingredients (ingredient*)>
+<!ELEMENT leashes (leash_description, leash_color)>
+<!ELEMENT leash_description (#PCDATA)>
+<!ELEMENT leash_color (navy_blue, pale_pink, neon_green, white, red)>
+<!ELEMENT accessories (tassels|hand_sanitizer|love_dog_magnet|snoopy_leash_charm)>
+<!ELEMENT tassels (tassel_description, tassel_color)>
+<!ELEMENT tassel_description (#PCDATA)>
+<!ELEMENT tassel_color (orange, brown, turquoise, red, grey, pink, fuchsia, lime_green)>
+<!ELEMENT hand_sanitizer (#PCDATA)>
+!ELEMENT love_dog_magnet (#PCDATA)
+!ELEMENT snoopy_leash_charm (#PCDATA)
+<!ELEMENT About_Us (Our_History, Our_Commitment)>
+<!ELEMENT Our_History (#PCDATA)>
+<!ELEMENT Our_Commitment (#PCDATA)>
+]>
+
+<Lucas_Dog_Boutique>
+  <inventory>
+    <inventory category = "dog treats" >
+      <Dog_Treats>
+          <about> All organic ingredients
+No fillers or additives
+Certified by the Department of Agriculture
+More protien than most commercial brands
+Full of grain, which helps prevent heart disease in later years
+A great addtion to your dog's diet </about>
+<ingredients>
+          <ingredient>Organic whole wheat flour</ingredient>
+            <ingredient>organic eggs</ingredient>
+            <ingredient>organic peanut butter</ingredient>
+            <ingredient>organic pumpkin</ingredient>
+            <ingredient>cinnamon</ingredient>
+            <ingredient>salt</ingredient>
+</ingredients>
+</Dog_Treats>
+<inventory category = "leashes">
+  <leashes>
+    <leash_description>These leashes help you and your dog stay connected. They are custom assembled and tailored. Our leashes have a strong and durable material so they don't rip and tear. You can even purchase some accessories to go with them such as tassels and hand sanitizers. You never know while you're walking your dog when a hand sanitizer may come in handy.
+Leashes include one tassel and the inspirational charm - Whoever said you can't buy happiness forgot about puppies!</leash_description>
+<leash_color>navy blue</leash_color>
+<leash_color>pale pink</leash_color>
+<leash_color>neon green</leash_color>
+<leash_color>white</leash_color>
+<leash_color>red</leash_color>
+</leashes>
+<inventory category = "accessories">
+  <accessories>
+  <tassels>
+    <tassel_description>Adorn your leash with a pop of color.  Each tassel is 2 inches in length and made of suede.</tassle_description>
+  <tassel_color>orange</tassel_color>
+  <tassel_color>brown</tassel_color>
+  <tassel_color>turquoise</tassel_color>
+  <tassel_color>red</tassel_color>
+  <tassel_color>grey</tassel_color>
+    <tassel_color>pink</tassel_color>
+      <tassel_color>fuchsia</tassel_color>
+        <tassel_color>lime green</tassel_color>
+      </tassels>
+<hand_sanitizer>Sometimes it just gets messy out there.  That's why we offer hand sanitizer to clean up your mess once you have cleaned up Fido's mess. 1 ounce. Active Ingredient - Ethyl Alcohol 62%. Includes clip. Perfect size for purse, car, travel bag and of course, the leash!</hand_sanitizer>
+<love_dog_magnet>This cute 3 by 3 inch magnet is a great reminder of where we get and give out love.
+Great for dog lovers for their refrigerator and lockers.</love_dog_magnet>
+<snoopy_leash_charm>Snoopy is a great reminder of how adorable dogs can be.  This charm can be attached to a leash, necklace or bracelet. Charm is 1 1/2 inch in length.</snoopy_leash_charm>
+</accessories>
+</inventory>
+<About_Us>
+<Our_History> We are a group of twelve and thirteen year old girls
+who started Luca's Dog Boutique from a neighborhood dog treat stand when we were ten years old.
+We all share the love of dogs. We are all about keeping your dog healthy and happy, and giving back to the community along the way.
+Our dogs are like family and deserve the highest quality ingredients in everything they eat.</Our_History>
+<Our_Commitment>We are committed to sharing our profits with:
+The Animal Humane Society, Hennepin County Medical Center Pediatric Music Therapy, and
+Highlands Elementary School</Our_Commitment>
+</About_Us>
+</Lucas_Dog_Boutique>
