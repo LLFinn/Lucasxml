@@ -1,21 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Lucas_Dog_Boutique [
 
 <!ELEMENT Lucas_Dog_Boutique (inventory, About_Us)>
-<!ELEMENT inventory (Dog_Treats|Leashes|accessories)>
-<!ELEMENT Dog_Treats (about|ingredients)>
+<!ELEMENT inventory (Dog_Treats, leashes, accessories)>
+<!ELEMENT Dog_Treats (about, ingredients)>
 <!ELEMENT about (#PCDATA)>
-<!ELEMENT ingredients (ingredient*)>
+<!ELEMENT ingredients (#PCDATA)>
 <!ELEMENT leashes (leash_description, leash_color)>
 <!ELEMENT leash_description (#PCDATA)>
-<!ELEMENT leash_color (navy_blue, pale_pink, neon_green, white, red)>
-<!ELEMENT accessories (tassels|hand_sanitizer|love_dog_magnet|snoopy_leash_charm)>
+<!ELEMENT leash_color (#PCDATA)>
+<!ELEMENT accessories (tassels, hand_sanitizer, love_dog_magnet, snoopy_leash_charm)>
 <!ELEMENT tassels (tassel_description, tassel_color)>
 <!ELEMENT tassel_description (#PCDATA)>
-<!ELEMENT tassel_color (orange, brown, turquoise, red, grey, pink, fuchsia, lime_green)>
+<!ELEMENT tassel_color (#PCDATA)>
 <!ELEMENT hand_sanitizer (#PCDATA)>
-!ELEMENT love_dog_magnet (#PCDATA)
-!ELEMENT snoopy_leash_charm (#PCDATA)
+<!ELEMENT love_dog_magnet (#PCDATA)>
+<!ELEMENT snoopy_leash_charm (#PCDATA)>
 <!ELEMENT About_Us (Our_History, Our_Commitment)>
 <!ELEMENT Our_History (#PCDATA)>
 <!ELEMENT Our_Commitment (#PCDATA)>
@@ -23,7 +23,6 @@
 
 <Lucas_Dog_Boutique>
   <inventory>
-    <inventory category = "dog treats" >
       <Dog_Treats>
           <about> All organic ingredients
 No fillers or additives
@@ -32,36 +31,19 @@ More protien than most commercial brands
 Full of grain, which helps prevent heart disease in later years
 A great addtion to your dog's diet </about>
 <ingredients>
-          <ingredient>Organic whole wheat flour</ingredient>
-            <ingredient>organic eggs</ingredient>
-            <ingredient>organic peanut butter</ingredient>
-            <ingredient>organic pumpkin</ingredient>
-            <ingredient>cinnamon</ingredient>
-            <ingredient>salt</ingredient>
+          Organic whole wheat flour,organic eggs,organic peanut butter,organic pumpkin,cinnamon,
+            salt
 </ingredients>
 </Dog_Treats>
-<inventory category = "leashes">
   <leashes>
     <leash_description>These leashes help you and your dog stay connected. They are custom assembled and tailored. Our leashes have a strong and durable material so they don't rip and tear. You can even purchase some accessories to go with them such as tassels and hand sanitizers. You never know while you're walking your dog when a hand sanitizer may come in handy.
 Leashes include one tassel and the inspirational charm - Whoever said you can't buy happiness forgot about puppies!</leash_description>
-<leash_color>navy blue</leash_color>
-<leash_color>pale pink</leash_color>
-<leash_color>neon green</leash_color>
-<leash_color>white</leash_color>
-<leash_color>red</leash_color>
+<leash_color>navy_blue|pale_pink|neon_green|white|red</leash_color>
 </leashes>
-<inventory category = "accessories">
   <accessories>
   <tassels>
-    <tassel_description>Adorn your leash with a pop of color.  Each tassel is 2 inches in length and made of suede.</tassle_description>
-  <tassel_color>orange</tassel_color>
-  <tassel_color>brown</tassel_color>
-  <tassel_color>turquoise</tassel_color>
-  <tassel_color>red</tassel_color>
-  <tassel_color>grey</tassel_color>
-    <tassel_color>pink</tassel_color>
-      <tassel_color>fuchsia</tassel_color>
-        <tassel_color>lime green</tassel_color>
+    <tassel_description>Adorn your leash with a pop of color.  Each tassel is 2 inches in length and made of suede.</tassel_description>
+  <tassel_color>orange, brown, turquoise, red, grey, pink, fuchsia, lime green</tassel_color>
       </tassels>
 <hand_sanitizer>Sometimes it just gets messy out there.  That's why we offer hand sanitizer to clean up your mess once you have cleaned up Fido's mess. 1 ounce. Active Ingredient - Ethyl Alcohol 62%. Includes clip. Perfect size for purse, car, travel bag and of course, the leash!</hand_sanitizer>
 <love_dog_magnet>This cute 3 by 3 inch magnet is a great reminder of where we get and give out love.
